@@ -1,0 +1,73 @@
+a{
+    color: #FFFAFA;
+    text-decoration: none;
+    transition: all .2s;
+}
+a:hover{
+    color: #663399;
+    font-size: 1.3rem;
+}
+/* a:visited{
+    color: red;
+} */
+ a:active{
+    color: rgb(0, 0, 0);
+ }
+ .btn{
+    background: #9370DB;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: inherit;
+ }
+ .btn:hover{
+    opacity: 0.5;
+    color: #FFFAFA;
+ }
+ @media (max-width: 650px){
+    .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+  /* Стиль для фиксированного меню */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #6a0dad; /* Фиолетовый цвет */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    z-index: 1000;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #8a2be2; /* Более светлый оттенок фиолетового */
+    border-radius: 4px;
+}
+
+/* Отступ для верхней части страницы, чтобы меню не перекрывало контент */
+.container {
+    margin-top: 60px;
+}

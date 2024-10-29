@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aga.css">
+    <link rel="stylesheet" href="links.css">
+    <title>Любимые цвета Никиты и Лизы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width: 650px){
+    .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+        header {
+            background-color: #6a0dad; /* Фиолетовый */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+         /* Оформление кнопки "Назад" */
+         .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #6a0dad; /* Фиолетовый */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #8a2be2; /* Светлее при наведении */
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        .favorite-colors {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .color-box {
+            width: 45%;
+            padding: 20px;
+            border-radius: 8px;
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nikita {
+            background-color: #ffffff; /* Белый */
+            border: 2px solid #6a0dad;
+        }
+        .liza {
+            background-color: #e6e6fa; /* Светло-фиолетовый */
+            border: 2px solid #ffffff;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка "Назад" -->
+    <a href="javascript:history.back()" class="back-button">Назад</a>
+    <header>
+        <h1>Любимые цвета Никиты и Лизы</h1>
+    </header>
+
+    <div class="container">
+        <section class="favorite-colors">
+            <div class="color-box nikita">
+                <h2>Никита</h2>
+                <p>Любимый цвет Никиты — белый. Белый символизирует чистоту, простоту и гармонию. Этот цвет отлично сочетается с фиолетовым, создавая элегантное и утонченное сочетание.</p>
+            </div>
+            <div class="color-box liza">
+                <h2>Лиза</h2>
+                <p>Любимый цвет Лизы — фиолетовый. Фиолетовый цвет ассоциируется с творчеством, мистикой и изысканностью. В сочетании с белым он выглядит особенно стильно и современно.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <img src="imgs/1.jpg" alt="Цветы белого и фиолетового">
+            <img src="imgs/2.jpg" alt="Цветы фиолетового и белого">
+            <img src="imgs/3.webp" alt="Цветы светло-фиолетового и белого">
+            <img src="imgs/4.jpg" alt="Цветы белого и светло-фиолетового">
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Любимые цвета Никиты и Лизы
+    </footer>
+</body>
+</html>

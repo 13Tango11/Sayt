@@ -1,0 +1,212 @@
+/* Основные стили для страницы */
+body {
+    background: #9400D3;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+/* Контейнер для всей страницы */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Блок для аватарки и информации о профиле */
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Стили для блока с текстом и профилем */
+.profile-info {
+    flex: 1; /* Занимает оставшееся пространство рядом с аватаркой */
+    max-width: 600px;
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.profile-info a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Стили для текста внутри .text */
+.text {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Отступ сверху для разделения с профилем */
+}
+
+.text p {
+    margin: 0;
+}
+
+.text strong em {
+    color: #BA55D3;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #f0e6ff;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.text p br {
+    line-height: 2;
+}
+
+/* Стили для аватарки */
+.avatar {
+    width: 230px;
+    border-radius: 10%; /* Скругленные углы */
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+/* Стили для формы "Связаться со мной" */
+.contact-me {
+    background-color: #FFFAFA;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Добавлено, чтобы скрыть любые переполненные элементы */
+}
+
+.contact-me label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-me input,
+.contact-me textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box; /* Добавлено для правильного учета отступов */
+}
+
+.contact-me textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-me .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6a5acd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-me .btn:hover {
+    background-color: #483d8b;
+}
+
+/* Общие стили для карточек */
+.card {
+    padding: 15px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #000;
+}
+
+/* Стили для блока "Спасибо вам" */
+.thank-you {
+    background-color: #FFFAFA;
+}
+
+.thank-you ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.thank-you ul li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #e0f7fa;
+}
+
+.thank-you ul li:nth-child(even) {
+    background-color: #8A2BE2;
+}
+
+.thank-you ul li:first-child {
+    background-color: #663399;
+    color: white;
+}
+
+.thank-you ul li:last-child {
+    background-color: #9370DB;
+    color: white;
+}
+
+/* Стили для блока "Опыт зиготы" */
+.zigota-experience {
+    background-color: #FFFAFA;
+}
+
+.zigota-experience table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.zigota-experience th, .zigota-experience td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.zigota-experience th {
+    background-color: #9932CC;
+    color: white;
+    font-weight: bold;
+}
+
+.zigota-experience tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.zigota-experience tbody tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}

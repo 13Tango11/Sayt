@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aga.css">
+    <link rel="stylesheet" href="links.css">
+    <title>Сирень</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Светлый фон */
+            margin: 0;
+            padding: 0;
+        }
+        
+        @media (max-width: 650px){
+    .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+        header {
+            background-color: #6a0dad; /* Фиолетовый */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+         /* Оформление кнопки "Назад" */
+         .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #6a0dad; /* Фиолетовый */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #8a2be2; /* Светлее при наведении */
+        }
+
+        .container {
+            padding: 20px;
+        }
+        .introduction {
+            background-color: #ffffff; /* Белый */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #6a0dad; /* Фиолетовый */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+       <!-- Кнопка "Назад" -->
+       <a href="javascript:history.back()" class="back-button">Назад</a>
+    <header>
+        <h1>Сирень: Красота Весны</h1>
+    </header>
+
+    <div class="container">
+        <section class="introduction">
+            <h2>Что такое сирень?</h2>
+            <p>Сирень — это красивое цветущее растение, известное своими ароматными цветами, которые варьируются от белого до фиолетового. Она символизирует весну, обновление и любовь. В садах и парках сирень часто используется для создания живописных композиций и наполнения воздуха сладким ароматом.</p>
+            <p>Сирень также обладает лекарственными свойствами и используется в народной медицине. Её цветы часто применяются для приготовления настоев и отваров, обладающих противовоспалительными свойствами.</p>
+        </section>
+
+        <section class="gallery">
+            <img src="https://img.goodfon.ru/original/1280x800/3/c4/white-purple-lilac-flowers-heart-love-floral-siren-tsvety-se.jpg" alt="Сирень 1">
+            <img src="https://avatars.mds.yandex.net/i?id=06d417b2b48fdadbee6f2d6e51128d29_l-4714015-images-thumbs&n=13" alt="Сирень 2">
+            <img src="https://darvin-market.ru/upload/resize_cache/webp/iblock/060/gvsr3vkepglzz3bn1hwokdzt3tgqne0x.webp" alt="Сирень 3">
+            <img src="https://avatars.mds.yandex.net/i?id=c483a6b7af88d2cf0605b19dc1ce6086_l-9181224-images-thumbs&n=13" alt="Сирень 4">
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Сайт о Сирени
+    </footer>
+</body>
+</html>
